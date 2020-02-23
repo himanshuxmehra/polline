@@ -1,16 +1,13 @@
 # polline
 
-A new Flutter project.
+A new app that allows users to give there opinion in the form of polls.
+And also a organization/govt. can release poll and get the public opinion in the form of polls.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is made with Flutter
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
