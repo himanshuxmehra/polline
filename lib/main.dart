@@ -4,6 +4,11 @@ import 'screen/home.dart';
 
 void main() {
   runApp( MaterialApp(
+    theme: ThemeData(
+      primarySwatch: Colors.indigo[8000],
+      primaryColor: Colors.indigo[8000],
+      textSelectionColor: Colors.indigo[8000],
+    ),
     debugShowCheckedModeBanner: false,
     home: MyApp(),
   ));

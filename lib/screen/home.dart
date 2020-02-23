@@ -1,19 +1,47 @@
 import 'package:flutter/material.dart';
+import 'package:polline/widgets/frontcar.dart';
+import 'package:polline/widgets/navbar.dart';
+import 'package:polline/widgets/news.dart';
+import 'package:polline/widgets/recent_card.dart';
+import '../widgets/appbaar.dart';
+import '../models/feed.dart';
+
 
 class Home extends StatelessWidget {
+  
+  final selIndex=0;
+  final List imag = ['assets/img1.jpg','assets/img2.jpg','assets/img3.jpg'];
+  final List rpolli = ['assets/default_poll.png','assets/default_poll.png','assets/default_poll.png'];
+  final List<Feed> feed = [
+    Feed(
+      img: 'assets/img1.jpg', 
+      title: 'News Title #1', 
+      link:'#', 
+      desc:'difsifsdfndskj'),
+    Feed(
+      img: 'assets/img2.jpg', 
+      title: 'News Title #2', 
+      link:'#', 
+      desc:'difsifsrgsrkj'),
+    Feed(
+      img: 'assets/img3.jpg', 
+      title: 'News Title #3', 
+      link:'#', 
+      desc:'diwretrytgsrkj'),
+    ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: new AppBar(
-        backgroundColor: Colors.black,
-        title: new Text("Welcome To Polline "),
-        automaticallyImplyLeading: false,
-      ),
-      body: new Center(
-        child: new Text(
-          "Welcome!",
-          style: new TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0),
-        ),
+      appBar:  CAppBar(),
+      bottomNavigationBar: NavBar(selIndex),
+      body: Column(
+        children: <Widget>[
+          FrontCar(imag),
+          SizedBox(height: 5,),
+          RecentPolls(rpolli),
+          News(feed),
+        ],
       ),
     );
   }
