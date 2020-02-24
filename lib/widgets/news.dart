@@ -12,7 +12,7 @@ class News extends StatelessWidget {
     return Column(
           children: <Widget>[
             Container(
-          color: Colors.black,
+          color: Colors.indigo[800],
           margin: EdgeInsets.only(top: 10),
           padding: EdgeInsets.all(5),
           alignment: Alignment.topLeft,
@@ -31,31 +31,33 @@ class News extends StatelessWidget {
               ),
         ),
             Container(
-              height:220,
-            child: ListView.builder(
-              itemBuilder: (ctx, index) {
-                return Card(
-                  margin: EdgeInsets.symmetric(vertical: 8, horizontal: 5),
-                  child: ListTile(
-                    leading: Container(
-                      width: 100,
-                      height: 100,
-                      margin: EdgeInsets.symmetric(horizontal: 5.0),
-                      decoration: BoxDecoration(              ),
-                      child: Image(image: AssetImage(news[index].img),)
-                    ),
-                    title: Text(
-                      news[index].title,
-                    
-                    ),
-                    subtitle: Text(
-                      news[index].desc),
-                    trailing: Text('Link'),
-                    ),
-                );
-              },
-              itemCount: news.length,                 
-                    ),
+              child: SingleChildScrollView(
+                              child: ListView.builder(
+                shrinkWrap: true,
+                itemBuilder: (ctx, index) {
+                  return Card(
+                    margin: EdgeInsets.symmetric(vertical: 8, horizontal: 5),
+                    child: ListTile(
+                      leading: Container(
+                        width: 100,
+                        height: 100,
+                        margin: EdgeInsets.symmetric(horizontal: 5.0),
+                        decoration: BoxDecoration(              ),
+                        child: Image(image: AssetImage(news[index].img),)
+                      ),
+                      title: Text(
+                        news[index].title,
+                      
+                      ),
+                      subtitle: Text(
+                        news[index].desc),
+                      trailing: Text('Link'),
+                      ),
+                  );
+                },
+                itemCount: news.length,                 
+                      ),
+              ),
                       
         
       )

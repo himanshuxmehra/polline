@@ -8,7 +8,9 @@ import '../models/feed.dart';
 
 
 class Home extends StatelessWidget {
-  
+  int index;
+  Home(this.index);
+
   final selIndex=0;
   final List imag = ['assets/img1.jpg','assets/img2.jpg','assets/img3.jpg'];
   final List rpolli = ['assets/default_poll.png','assets/default_poll.png','assets/default_poll.png'];
@@ -34,7 +36,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:  CAppBar(),
-      bottomNavigationBar: NavBar(selIndex),
+      bottomNavigationBar: NavBar(index),
       body: Column(
         children: <Widget>[
           FrontCar(imag),

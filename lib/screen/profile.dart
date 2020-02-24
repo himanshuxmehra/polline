@@ -6,11 +6,9 @@ import 'package:polline/widgets/recent_card.dart';
 import '../widgets/appbaar.dart';
 import '../models/feed.dart';
 
-class Search extends StatelessWidget {
-  
+class Profile extends StatelessWidget {
   int index;
-  Search(this.index);
-
+  Profile(this.index);
   @override
   Widget build(BuildContext context) {
     return Scaffold(

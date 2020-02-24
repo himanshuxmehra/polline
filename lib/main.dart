@@ -28,9 +28,10 @@ class _MyAppState extends State<MyApp> {
         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
       ),
       seconds: 5,
-      navigateAfterSeconds: Home(),
+      navigateAfterSeconds: Home(0),
       image: Image.asset(
-          'assets/loading.gif'),
+          'assets/loading.gif'
+          ),
       backgroundColor: Colors.white,
       styleTextUnderTheLoader: TextStyle(),
       photoSize: 150.0,

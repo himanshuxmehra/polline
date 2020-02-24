@@ -10,7 +10,7 @@ class RecentPolls extends StatelessWidget {
     return Column(
       children: <Widget>[ 
         Container(
-          color: Colors.black,
+          color: Colors.indigo[800],
           margin: EdgeInsets.only(top: 10),
           padding: EdgeInsets.all(5),
           alignment: Alignment.topLeft,
