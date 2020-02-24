@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "613357495628",
+    "firebase_url": "https://polline-8ef43.firebaseio.com",
+    "project_id": "polline-8ef43",
+    "storage_bucket": "polline-8ef43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613357495628:android:a7f6e4027bc6dad9155be9",
+        "android_client_info": {
+          "package_name": "com.example.polline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "613357495628-61ufc30hf0pnjrm5sqbq5qbjlmoc8ais.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.polline",
+            "certificate_hash": "2501a3e50c566b3dc12c97891b13c3b6f4453ab7"
+          }
+        },
+        {
+          "client_id": "613357495628-7e8om732bb5hd637jnkavs8gglg48coh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyd3KLh_VKEkP3T_oIj_NjtisnQU03rnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "613357495628-7e8om732bb5hd637jnkavs8gglg48coh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
