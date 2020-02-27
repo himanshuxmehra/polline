@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:polline/screen/main_screen.dart';
 
-import 'home.dart';
 import 'login.dart';
 
 class HomePage extends StatefulWidget {
@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
     print(user);
     return Scaffold(
         body: user != null
-            ? Home(
+            ? MainScreen(
           user: user,
         )
             : Login());

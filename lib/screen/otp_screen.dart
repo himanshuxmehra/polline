@@ -2,9 +2,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:polline/Animation/FadeAnimation.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:polline/screen/main_screen.dart';
 
 import './otp_input.dart';
-import 'home.dart';
 
 class OTPScreen extends StatefulWidget {
   final String mobileNumber;
@@ -190,7 +190,7 @@ class _OTPScreenState extends State<OTPScreen> {
           Navigator.pushAndRemoveUntil(
               context,
               MaterialPageRoute(
-                builder: (context) => Home(
+                builder: (context) => MainScreen(
                   user: value.user,
                 ),
               ),
@@ -249,7 +249,7 @@ class _OTPScreenState extends State<OTPScreen> {
         Navigator.pushAndRemoveUntil(
             context,
             MaterialPageRoute(
-              builder: (context) => Home(
+              builder: (context) => MainScreen(
                 user: value.user,
               ),
             ),
